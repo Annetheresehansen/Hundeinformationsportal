@@ -16,6 +16,7 @@ body {
     z-index: 100;
 }
 
+/*Navigation*/
 .logo{
     font-size: 32px;
     font-family: "League Spartan", Black ;
@@ -42,6 +43,7 @@ body {
     color: #DB993D;
 }
 
+/*Velkommen*/
 .hero {
     color: #000;
     text-align: center;
@@ -62,10 +64,69 @@ body {
     font-size: 20px;
 }
 
+.hero-image img {
+    width: 100%;
+    height: auto; 
+}
+
 h2{
-  font-family: "League Spartan", Black;
-  font-size: 30px;  
-  margin-left: 70px;
+    font-size: 40px;
+    font-family: "League Spartan", Black;
+    margin-left: 50px;
+}
+
+h3{
+    font-family: "League Spartan", Black;
+    font-size: 30px;  
+    text-align: center;
+  }
+
+/*Forside bokse*/
+.forside_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -80px;
+}
+
+.box {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    margin-bottom: 10px;
+}
+
+.box p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box button {
+    background-color: #C0ae9c;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+    align-content: center;
+    margin-left: 150px;
+    font-family: "League Spartan";
+    font-size: 20px; 
+}
+
+.box button:hover {
+    background-color: #DB993D;
 }
 
  /* .scrollx */
@@ -102,7 +163,7 @@ h2{
 
 /* end .scrollx */
 
-/* Hunderacer container */
+/* bokse */
 .container {
     display: flex;
 }
@@ -110,7 +171,7 @@ h2{
 .box {
     flex: 1;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     margin: 20px;
     border-radius: 10px;
     background-color: #fff;
@@ -119,6 +180,12 @@ h2{
 
 .box img {
     width: 300px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.dog-image {
+    max-width: 250px;
     height: auto;
 }
 
@@ -131,15 +198,22 @@ h2{
 
 .box p {
     margin-bottom: 10px;
+    line-height: 1.5;
+    font-family: "League Spartan"
 }
 
 .box button {
     background-color: #C0ae9c;
     color: #fff;
     border: none;
-    padding: 8px 16px;
+    padding: 12px 24px;
     cursor: pointer;
     border-radius: 4px;
+    margin-top: 20px;
+    align-content: center;
+    margin-left: 150px;
+    font-family: "League Spartan";
+    font-size: 20px; 
 }
 
 .box button:hover {
@@ -148,38 +222,20 @@ h2{
 
 /*footer*/
 
-.left-footer{
-    float: left;
-    width: 50%;
-	margin-left: 20px;
-}
-
-.p_footer{
-    font-family: "League Spartan";
-	font-size: 20px;
-	text-align: left;
-	margin-left: 50 px;
-	color: #000000; 
-}
-
-footer a:hover{
+.footer {
+    background-image: url('footer.png');
+    background-size: cover;
     color: #000;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.right-footer{
-    float: right;
-    width: 50%;
+.contact-info p, .faq p {
+    margin: 5px 0;
 }
 
-footer img{
-	 width: 50%;
-	 float: right;
-	 margin-bottom: 20px;
-	 margin-right: 20px;
+.contact-info a, .faq a {
+    color: #000;
+    text-decoration: none;
 }
 
-footer{
-	display: flex;
-    border-top: 1px solid #000;
-    padding-top: 10px
-}
