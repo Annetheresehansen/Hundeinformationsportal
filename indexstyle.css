@@ -54,22 +54,12 @@ body {
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 50px;
     font-family: "League Spartan", Black;
 }
 
 .hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #DB993D;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+    font-size: 20px;
 }
 
 h2{
@@ -111,6 +101,50 @@ h2{
 }
 
 /* end .scrollx */
+
+/* Hunderacer container */
+.container {
+    display: flex;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+ 
+}
+
+.box img {
+    width: 300px;
+    height: auto;
+}
+
+.p_overskrift {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: "League Spartan", Black;
+    font-size: 25px; 
+}
+
+.box p {
+    margin-bottom: 10px;
+}
+
+.box button {
+    background-color: #C0ae9c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.box button:hover {
+    background-color: #DB993D;
+}
 
 /*footer*/
 
