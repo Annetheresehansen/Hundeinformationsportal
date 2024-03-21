@@ -11,13 +11,6 @@ Lys beige   #F1ecde
 Mørk beige  #C0ae9c
 Orange      #DB993D
 Sort        #000
-
-$primary-color: #F1ecde;
-$secondary-color: #C0ae9c;
-$third-color: #DB993D;
-$text: "League Spartan";
-$text-color: #000;
-$knap-text: #fff;
 ------------------------------------------------------------------------ */
 /*Variabler*/
 /*Mixins*/
@@ -313,4 +306,51 @@ aside {
 .contact-info a, .faq a {
   color: #000;
   text-decoration: none;
+}
+
+/*mobil*/
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: 24px;
+  }
+  .logo img {
+    width: 120px;
+    height: auto;
+  }
+  .navbar {
+    align-items: center;
+    margin-right: 60px;
+  }
+  .navbar a {
+    margin: 5px 0;
+    flex-direction: column;
+  }
+  .kolonne1, .kolonne2 article {
+    width: auto; /*width sættes til auto for at fylde den fulde bredde af skærmens størrelse*/
+    height: auto;
+    margin: 0 1em;
+    align-content: left;
+  }
+  .kolonne1, .kolonne2 aside {
+    width: auto;
+    height: auto;
+    margin: 1em 1em 0 1em;
+  }
+  .kolonne1, .kolonne2 {
+    flex-direction: column; /*sætter flex-direction til column og rykker elementerne under hinanden*/
+  }
+  .beagleimg {
+    display: none; /* Skjuler beagleimg på skjermer som er 768 piksler eller mindre i bredde */
+  }
+  .infoimg {
+    width: 450px;
+    margin-top: -120px;
+    align-content: center;
+  }
+  .container {
+    flex-direction: column; /* Ændrer flex-retningen til kolonne, så boksene står under hinanden */
+  }
+  .box {
+    margin: 20px auto; /* Centrerer boksene vandret */
+  }
 }/*# sourceMappingURL=style.css.map */
