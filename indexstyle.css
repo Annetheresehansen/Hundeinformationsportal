@@ -56,12 +56,32 @@ body {
 }
 
 .hero h1 {
-    font-size: 50px;
+    font-size: 80px;
     font-family: "League Spartan", Black;
 }
 
 .hero p {
     font-size: 20px;
+    font-family: "League Spartan", Black;
+    margin-top: -20px;
+}
+
+.hero button {
+    background-color: #C0ae9c;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+    align-content: center;
+    font-family: "League Spartan";
+    font-size: 20px; 
+    margin-top: -5px;
+}
+
+.hero button:hover {
+    background-color: #DB993D;
 }
 
 .hero-image img {
@@ -163,50 +183,6 @@ h4{
     margin-top: -430px
   }
 
-/*Forside bokse*/
-.forside_container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -80px;
-}
-
-.box {
-    width: 30%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.box img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.box h2 {
-    margin-bottom: 10px;
-}
-
-.box p {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.box button {
-    background-color: #C0ae9c;
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-top: 20px;
-    align-content: center;
-    margin-left: 150px;
-    font-family: "League Spartan";
-    font-size: 20px; 
-}
-
 .box button:hover {
     background-color: #DB993D;
 }
@@ -218,7 +194,7 @@ h4{
     gap: 10px;
     overflow-x: scroll;
     max-width: 100vw;
-    background-color: #DB993D;
+    background-color: #C0ae9c;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;

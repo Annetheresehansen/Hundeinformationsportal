@@ -1,0 +1,31 @@
+/*Variabler*/
+$primary-color: #F1ecde;
+$secondary-color: #C0ae9c;
+$third-color: #DB993D;
+$text: "League Spartan";
+$text-color: #000;
+$knap-text: #fff;
+
+/*Mixins*/
+@mixin button($bg-color: $secondary-color){
+    background-color: $secondary-color; 
+    padding: $btn-padding;
+    color: $text;
+    text-decoration: none;
+    text-align: center;
+}
+
+@mixin box($width: 30%){
+    width: $width;
+    border-radius: 5px;
+}
+
+@mixin scrollx($max-width: 100vw){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: $max-width;
+    background-color: $secondary-color;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}

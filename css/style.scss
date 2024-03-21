@@ -1,7 +1,29 @@
+/* ------------------------------------------------------------------------
+[Typografi]
+
+Overskrifter:	'League Spartan, bold;
+Brødtekst:		'League Spartan, regular;
+
+[Farve koder]
+
+Lys beige   #F1ecde
+Mørk beige  #C0ae9c
+Orange      #DB993D
+Sort        #000
+
+$primary-color: #F1ecde;
+$secondary-color: #C0ae9c;
+$third-color: #DB993D;
+$text: "League Spartan";
+$text-color: #000;
+$knap-text: #fff;
+------------------------------------------------------------------------ */
+
 @use 'partial';
+
 body {
     min-height: 100vh;
-    background-color: #F1ecde;
+    background-color: partial.$primary-color;
 }
 
 .header{
@@ -10,17 +32,18 @@ body {
     left: 0;
     width: 100%;
     padding: 10px 50px;
-    background: #f1ecde;
+    background: partial.$primary-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
+/*Navigation*/
 .logo{
     font-size: 32px;
-    font-family: "League Spartan", Black ;
-    color: #000;
+    font-family: partial.$text;
+    color: partial.$text-color;
     text-decoration: none;
     font-weight: 700;
 }
@@ -32,19 +55,20 @@ body {
 
 .navbar a{
     font-size: 18px;
-    font-family:  "League Spartan", Black;
-    color: #000;
+    font-family:  partial.$text;
+    color: partial.$text-color;
     text-decoration: none;
     margin-left: 10px;
     margin-right: 100px;
 }
 
 .navbar a:hover {
-    color: #DB993D;
+    color: partial.$third-color;
 }
 
+/*Velkommen*/
 .hero {
-    color: #000;
+    color: partial.$text-color;
     text-align: center;
     padding: 100px 20px;
 }
@@ -55,28 +79,135 @@ body {
 }
 
 .hero h1 {
-    font-size: 36px;
-    font-family: "League Spartan", Black;
+    font-size: 60px;
+    font-family: partial.$text;
 }
 
 .hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: partial.$text;
+    margin-top: -20px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #DB993D;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+.hero button {
+    background-color: partial.$secondary-color;
+    color: partial.$knap-text;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+    align-content: center;
+    font-family: partial.$text;
+    font-size: 20px; 
+    margin-top: -5px;
+}
+
+.hero button:hover {
+    background-color: partial.$third-color;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto; 
 }
 
 h2{
-  font-family: "League Spartan", Black;
-  font-size: 30px;  
-  margin-left: 70px;
+    font-size: 40px;
+    font-family: partial.$text;
+    margin-left: 50px;
+}
+
+h3{
+    font-family: partial.$text;
+    font-size: 30px;  
+    text-align: center;
+  }
+
+h4{
+    text-align: center;
+    font-size: 35px;
+    font-family: partial.$text;
+}
+
+  .infotekst{
+    font-size: 18px;
+    font-family: partial.$text;
+    line-height: 1.5;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+  }
+
+  .tekstboks{
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5;
+    font-family: partial.$text;
+  }
+
+  .tekstboks_fakta{
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: partial.$text;
+  }
+
+/*Forside beagle*/
+  .kolonne1 {
+    display: flex;
+  }
+  
+  article{
+      height: auto; 
+      width: 40%;
+      margin-left: 100px;
+      margin-top: 120px;
+  }
+  
+  aside{
+      height: auto;
+      width: 60%;
+      margin-top: 120px;
+  }
+
+  .beagleimg{
+    width: 500px;
+    margin-bottom: 500px;
+  }
+
+  .infoimg{
+    width: 800px;
+  }
+
+  /*Info beagle*/
+  .kolonne2{
+    display: flex;
+  }
+  
+  .kolonne2 article{
+      height: auto; 
+      padding: 1em;
+      width: 70%;
+      margin: 0 0 0 1em; 
+      margin-top: -500px;
+      margin-left: 20px;
+      margin-bottom: 50px;
+  }
+  
+  .kolonne2 aside{
+    background-color: partial.$secondary-color;
+      height: 850px;
+      padding: 1em;
+      width: 28%;
+      margin: 0 1em 0 1em;
+    border-radius: 8px;
+    margin-right: 50px;
+    margin-top: -430px
+  }
+
+.box button:hover {
+    background-color: partial.$third-color;
 }
 
  /* .scrollx */
@@ -86,7 +217,7 @@ h2{
     gap: 10px;
     overflow-x: scroll;
     max-width: 100vw;
-    background-color: #DB993D;
+    background-color: partial.$secondary-color;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -102,7 +233,7 @@ h2{
     margin-bottom: 25px;
     width: 300px;
     height: 450px;
-    background: #fff;
+    background: partial.$knap-text;
 }
 
 .scrollx img {
@@ -113,40 +244,76 @@ h2{
 
 /* end .scrollx */
 
+/* bokse */
+.container {
+    display: flex;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: partial.$knap-text;
+ 
+}
+
+.box img {
+    width: 300px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.dog-image {
+    max-width: 250px;
+    height: auto;
+}
+
+.p_overskrift {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: partial.$text;
+    font-size: 25px; 
+}
+
+.box p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-family: partial.$text;
+}
+
+.box button {
+    background-color: partial.$secondary-color;
+    color: partial.$knap-text;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+    align-content: center;
+    margin-left: 150px;
+    font-family: partial.$text;
+    font-size: 20px; 
+}
+
+.box button:hover {
+    background-color: partial.$third-color;
+}
+
 /*footer*/
 
-.left-footer{
-    float: left;
-    width: 50%;
-	margin-left: 20px;
+.footer {
+    color: partial.$text-color;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.p_footer{
-    font-family: "League Spartan";
-	font-size: 20px;
-	text-align: left;
-	margin-left: 50 px;
-	color: #000000; 
+.contact-info p, .faq p {
+    margin: 5px 0;
 }
 
-footer a:hover{
-    color: #000;
-}
-
-.right-footer{
-    float: right;
-    width: 50%;
-}
-
-footer img{
-	 width: 50%;
-	 float: right;
-	 margin-bottom: 20px;
-	 margin-right: 20px;
-}
-
-footer{
-	display: flex;
-    border-top: 1px solid #000;
-    padding-top: 10px
+.contact-info a, .faq a {
+    color: partial.$text-color;
+    text-decoration: none;
 }
