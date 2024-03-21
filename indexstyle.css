@@ -81,6 +81,58 @@ h3{
     text-align: center;
   }
 
+/*Forside beagle*/
+  .kolonne1 {
+    display: flex;
+  }
+  
+  article{
+      height: auto; 
+      width: 40%;
+      margin-left: 100px;
+      margin-top: 120px;
+  }
+  
+  aside{
+      height: auto;
+      width: 60%;
+      margin-top: 120px;
+  }
+
+  .beagleimg{
+    width: 500px;
+    margin-bottom: 500px;
+  }
+
+  .infoimg{
+    width: 800px;
+  }
+
+  /*Info beagle*/
+  .kolonne2{
+    display: flex;
+  }
+  
+  .kolonne2 article{
+      height: auto; 
+      padding: 1em;
+      width: 70%;
+      margin: 0 0 0 1em; 
+      margin-top: -500px;
+      margin-left: 20px;
+  }
+  
+  .kolonne2 aside{
+    background-color: #C0ae9c;
+      height: auto;
+      padding: 1em;
+      width: 28%;
+      margin: 0 1em 0 1em;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-top: -380px
+  }
+
 /*Forside bokse*/
 .forside_container {
     display: flex;
@@ -223,7 +275,7 @@ h3{
 /*footer*/
 
 .footer {
-    background-image: url('footer.png');
+    background-image: url('footerstor.png');
     background-size: cover;
     color: #000;
     padding: 20px 0;
