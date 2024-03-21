@@ -81,6 +81,35 @@ h3{
     text-align: center;
   }
 
+h4{
+    text-align: center;
+    font-size: 35px;
+    font-family: "League Spartan", Black;
+}
+
+  .infotekst{
+    font-size: 18px;
+    font-family: "League Spartan";
+    line-height: 1.5;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+  }
+
+  .tekstboks{
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5;
+    font-family: "League Spartan", Black;
+  }
+
+  .tekstboks_fakta{
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "League Spartan", Black;
+  }
+
 /*Forside beagle*/
   .kolonne1 {
     display: flex;
@@ -120,17 +149,18 @@ h3{
       margin: 0 0 0 1em; 
       margin-top: -500px;
       margin-left: 20px;
+      margin-bottom: 50px;
   }
   
   .kolonne2 aside{
     background-color: #C0ae9c;
-      height: auto;
+      height: 850px;
       padding: 1em;
       width: 28%;
       margin: 0 1em 0 1em;
     border-radius: 8px;
-    margin-right: 20px;
-    margin-top: -380px
+    margin-right: 50px;
+    margin-top: -430px
   }
 
 /*Forside bokse*/
